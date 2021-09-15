@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 94.731 s <<< FAILURE! - in TestSuite
+com.orangehrm.testcases.DataDrivenTest.loginTest1[Admin1, N!dhi@12#](2)  Time elapsed: 1.326 s  <<< FAILURE!
+java.lang.AssertionError: Both the url's did not match, so test failed expected [http://localhost/orangehrm/symfony/web/index.php/dashboard] but found [http://localhost/orangehrm/symfony/web/index.php/auth/validateCredentials]
+	at com.orangehrm.testcases.DataDrivenTest.loginTest1(DataDrivenTest.java:21)
+
+com.orangehrm.testcases.DataDrivenTest.loginTest1[Admin, N!dhi@12](3)  Time elapsed: 1.935 s  <<< FAILURE!
+java.lang.AssertionError: Both the url's did not match, so test failed expected [http://localhost/orangehrm/symfony/web/index.php/dashboard] but found [http://localhost/orangehrm/symfony/web/index.php/auth/validateCredentials]
+	at com.orangehrm.testcases.DataDrivenTest.loginTest1(DataDrivenTest.java:21)
+
+com.orangehrm.testcases.DataDrivenTest.loginTest1[Admin12, N!dhi@123](4)  Time elapsed: 1.199 s  <<< FAILURE!
+java.lang.AssertionError: Both the url's did not match, so test failed expected [http://localhost/orangehrm/symfony/web/index.php/dashboard] but found [http://localhost/orangehrm/symfony/web/index.php/auth/validateCredentials]
+	at com.orangehrm.testcases.DataDrivenTest.loginTest1(DataDrivenTest.java:21)
+
+com.orangehrm.testcases.DataDrivenTest.loginTest1[Admin, ](5)  Time elapsed: 0.378 s  <<< FAILURE!
+java.lang.AssertionError: Both the url's did not match, so test failed expected [http://localhost/orangehrm/symfony/web/index.php/dashboard] but found [http://localhost/orangehrm/symfony/web/index.php/auth/login]
+	at com.orangehrm.testcases.DataDrivenTest.loginTest1(DataDrivenTest.java:21)
+
