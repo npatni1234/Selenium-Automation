@@ -3,15 +3,18 @@ package com.orangehrm.testcases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.orangehrm.base.BaseClass;
+
+import com.orangehrm.base.BasePage;
 import com.orangehrm.pages.HomePage;
 
-public class HomePageTest extends BaseClass{
+
+public class HomePageTest extends BasePage{
 	HomePage homePage;
 	
-	@Test(priority = 2)
+	@Test(priority = 3)
 	public void adminTabTest() throws InterruptedException
 	{
+//		extent.createTest("adminTabTest");
 		homePage=loginPage.login("Admin","N!dhi@12#");
 		homePage.clickOnAdminTab();
 		Thread.sleep(2000);

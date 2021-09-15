@@ -1,36 +1,42 @@
 package com.orangehrm.testcases;
 
-//import org.openqa.selenium.WebDriver;
-//import org.openqa.selenium.chrome.ChromeDriver;
+
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.orangehrm.base.BaseClass;
-import com.orangehrm.pages.HomePage;
-import com.orangehrm.pages.LoginPage;
+//import com.aventstack.extentreports.ExtentTest;
 
-public class LoginPageTest extends BaseClass{
-//	WebDriver driver=new ChromeDriver();
-	
-	
-	LoginPage loginPage = new LoginPage(driver); //reference variable for calling LoginPage
+import com.orangehrm.base.BasePage;
+import com.orangehrm.pages.HomePage;
+
+
+
+public class LoginPageTest extends BasePage{
 	HomePage homePage; //reference variable for calling HomePage
-//	
-//	@Test(priority = 1)
-//	public void verifyLogo()
-//	{
-//		boolean flag= loginPage.validateLogo();
-//		Assert.assertTrue(flag);
-//	}
-//	
+	
 	@Test(priority = 1)
+	public void verifyLogo()
+	{
+//       ExtentTest test1=extent.createTest("verifyLogo");
+
+		boolean flag= loginPage.validateLogo();
+		Assert.assertTrue(flag);
+		
+		
+	}
+
+	@Test(priority = 2)
 	public void loginTest()
 	{
+//		ExtentTest test2=extent.createTest("loginTest");
+
 		homePage=loginPage.login("Admin", "N!dhi@12#");
 		String expectedURL="http://localhost/orangehrm/symfony/web/index.php/dashboard";
 //		String expectedURL="https://opensource-demo.orangehrmlive.com/index.php/dashboard";
 		String actualURL=driver.getCurrentUrl();
-		Assert.assertEquals(actualURL, expectedURL);
+		Assert.assertEquals(actualURL, expectedURL,"Both the URL's did not match"); //prints message if assertion fails
+		
 		
 	}
 	

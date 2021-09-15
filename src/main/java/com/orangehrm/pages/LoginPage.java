@@ -5,12 +5,17 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.orangehrm.base.BaseClass;
+import com.orangehrm.base.BasePage;
+
+
 
 
 //page class extends base class
-public class LoginPage extends BaseClass {
+public class LoginPage extends BasePage {
 	 WebDriver driver;
+	 public void LoginPage(WebDriver driver) {
+			this.driver=driver;
+	}
 	
 	//locating web elements using @FindBy annotation
 	@FindBy(id="txtUsername")
@@ -38,11 +43,11 @@ public class LoginPage extends BaseClass {
 	}
 
 
-//public boolean validateLogo()
-//{
-//	logo.isDisplayed();
-//	return true;
-//}
+public boolean validateLogo()
+{
+	logo.isDisplayed();
+	return true;
+}
 
 public HomePage login(String uname, String pswd)
 {
