@@ -1,4 +1,4 @@
-package com.orangehrm.testcases;
+package com.orangehrm.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,7 +17,7 @@ public class Delete_nationality extends BasePage{
 		driver.findElement(By.id("menu_admin_viewAdminModule")).click();
 		driver.findElement(By.id("menu_admin_nationality")).click();
 		
-		driver.findElement(By.id("ohrmList_chkSelectRecord_10")).click();
+		driver.findElement(By.id("ohrmList_chkSelectRecord_12")).click();
 		driver.findElement(By.id("btnDelete")).click();
 		driver.findElement(By.id("dialogDeleteBtn")).click();
 	}

@@ -4,15 +4,16 @@ package com.orangehrm.testcases;
 import java.util.concurrent.TimeUnit;
 import org.testng.annotations.Test;
 import com.orangehrm.base.BasePage;
+import com.orangehrm.pages.Delete_nationality;
 import com.orangehrm.pages.LoginPage;
 import com.orangehrm.pages.Logout;
-import com.orangehrm.pages.Nationality;
+
 
 public class TC_Delete_Nationality extends BasePage{
 		
 		@Test
-		public void Add_N() throws Exception {
-			driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
+		public void Delete1_Nationality() throws Exception {
+			driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 			LoginPage L1=new LoginPage(driver);
 			L1.LoginPage(driver);
 			L1.login("Admin", "N!dhi@12#");

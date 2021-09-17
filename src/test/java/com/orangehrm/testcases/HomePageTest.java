@@ -11,7 +11,7 @@ import com.orangehrm.pages.HomePage;
 public class HomePageTest extends BasePage{
 	HomePage homePage;
 	
-	@Test(priority = 3)
+	@Test(priority = 4)
 	public void adminTabTest() throws InterruptedException
 	{
 //		extent.createTest("adminTabTest");

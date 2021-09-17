@@ -1,28 +1,18 @@
-package com.orangehrm.pages;
-
-
-
+package com.orangehrm.testcases;
+import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-//import com.aventstack.extentreports.ExtentTest;
-
-import com.orangehrm.base.BasePage;
+import com.orangehrm.pages.Base_Nationality;
 import com.orangehrm.pages.HomePage;
 
-
-
-public class Nationality_base extends BasePage{
+public class Nationality_base extends Base_Nationality{
 	HomePage homePage; //reference variable for calling HomePage
 
 	
 	 @Test(dataProvider = "Credentials1",priority=3)
 	 public void NationalityTest(String username,String password, String Nationality) {
-//		 extent.createTest("loginTest1");
-
-	  
 	  driver.findElement(By.id("txtUsername")).sendKeys(username);
 	  driver.findElement(By.id("txtPassword")).sendKeys(password);
 	  driver.findElement(By.id("btnLogin")).click();
@@ -34,6 +24,7 @@ public class Nationality_base extends BasePage{
 	  driver.findElement(By.id("btnAdd")).click();
 	  driver.findElement(By.id("nationality_name")).sendKeys(Nationality);
 	  driver.findElement(By.id("btnSave")).click();
+	  driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 	  
 	 }
 

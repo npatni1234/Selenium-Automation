@@ -1,15 +1,16 @@
 
-package com.orangehrm.base;
+package com.orangehrm.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
-import com.orangehrm.pages.LoginPage;
+
+
 import com.orangehrm.utility.NewExcelLibrary;
 
 
-public class BasePage {
+public class Base_Nationality{
 	
 	public WebDriver driver;
 	public LoginPage loginPage;
@@ -31,23 +32,23 @@ public class BasePage {
      {
 	
 		driver.close();
-	}
-//	 
+     }
+		 
 
 	
 	@DataProvider(name ="Credentials1")
 	 public Object[][] getExcelData() {
 	  //Totals rows count
-	  int rows=obj.getRowCount("Data");
+	  int rows=obj.getRowCount("Add_Nationality");
 	  //Total Columns
-	  int column=obj.getColumnCount("Data");
+	  int column=obj.getColumnCount("Add_Nationality");
 	  int actRows=rows-1;
 	  
 	  Object[][] data= new Object[actRows][column];
 	  
 	  for(int i=1;i<actRows;i++) {
 	   for(int j=0; j<column;j++) {
-	    data[i][j]=obj.getCellData("Data", j, i+1);
+	    data[i][j]=obj.getCellData("Add_Nationality", j, i+1);
 	   }
 	  }
 	  return data;
