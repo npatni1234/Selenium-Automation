@@ -2,29 +2,64 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-09-15T13:44:47 IST" name="Default suite" finished-at="2021-09-15T13:44:47 IST" duration-ms="69">
+  <suite started-at="2021-09-18T17:24:06 IST" name="Default suite" finished-at="2021-09-18T17:24:26 IST" duration-ms="19398">
     <groups>
     </groups>
-    <test started-at="2021-09-15T13:44:47 IST" name="Default test" finished-at="2021-09-15T13:44:47 IST" duration-ms="69">
-      <class name="com.orangehrm.testcases.Nationality_base">
-        <test-method signature="NationalityTest(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:com.orangehrm.testcases.Nationality_base@45efc20d]" started-at="2021-09-15T13:44:47 IST" name="NationalityTest" data-provider="Credentials1" finished-at="2021-09-15T13:44:47 IST" duration-ms="29" status="FAIL">
-          <exception class="org.testng.internal.reflect.MethodMatcherException">
+    <test started-at="2021-09-18T17:24:06 IST" name="Default test" finished-at="2021-09-18T17:24:26 IST" duration-ms="19398">
+      <class name="com.orangehrm.testcases.timesheet.TT07_RemoveRowsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.testcases.timesheet.TT07_RemoveRowsTest@183e8023]" started-at="2021-09-18T17:24:06 IST" name="setup" finished-at="2021-09-18T17:24:11 IST" duration-ms="5132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="RemoveRowsTimesheet()[pri:0, instance:com.orangehrm.testcases.timesheet.TT07_RemoveRowsTest@183e8023]" started-at="2021-09-18T17:24:11 IST" name="RemoveRowsTimesheet" finished-at="2021-09-18T17:24:25 IST" duration-ms="14047" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[
-[public void com.orangehrm.testcases.Nationality_base.NationalityTest(java.lang.String,java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: NationalityTest([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}])
-Arguments: [null,null]]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#initialRows_0_projectName"}
+  (Session info: chrome=93.0.4577.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-EFM8U59U', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Nidhi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61047}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fc6882598cc5e3577c59124ec28cda23
+*** Element info: {Using=id, value=initialRows_0_projectName}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
-[public void com.orangehrm.testcases.Nationality_base.NationalityTest(java.lang.String,java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: NationalityTest([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}])
-Arguments: [null,null]
-at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
-at org.testng.internal.Parameters.injectParameters(Parameters.java:914)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#initialRows_0_projectName"}
+  (Session info: chrome=93.0.4577.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-EFM8U59U', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\Nidhi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61047}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fc6882598cc5e3577c59124ec28cda23
+*** Element info: {Using=id, value=initialRows_0_projectName}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.orangehrm.pages.timesheet.RemoveRowsPage.findElement(RemoveRowsPage.java:44)
+at com.orangehrm.pages.timesheet.RemoveRowsPage.RemoveRowsTimesheet(RemoveRowsPage.java:23)
+at com.orangehrm.testcases.timesheet.TT07_RemoveRowsTest.RemoveRowsTimesheet(TT07_RemoveRowsTest.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
@@ -47,11 +82,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- NationalityTest -->
-      </class> <!-- com.orangehrm.testcases.Nationality_base -->
+        </test-method> <!-- RemoveRowsTimesheet -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.testcases.timesheet.TT07_RemoveRowsTest@183e8023]" started-at="2021-09-18T17:24:25 IST" name="tearDown" finished-at="2021-09-18T17:24:26 IST" duration-ms="151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.orangehrm.testcases.timesheet.TT07_RemoveRowsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
