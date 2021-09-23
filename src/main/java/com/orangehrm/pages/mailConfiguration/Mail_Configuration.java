@@ -82,9 +82,6 @@ public class Mail_Configuration extends BasePage{
       {
 
     	  txtTestEmail.sendKeys(mailId);
-    	  txtsentmail.sendKeys("info@orangehrm.com");
-
-                 
 
       }
       

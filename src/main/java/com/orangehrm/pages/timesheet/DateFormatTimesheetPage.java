@@ -11,6 +11,7 @@ public class DateFormatTimesheetPage extends BasePage{
 		this.driver= driver;
 	}
 	
+	//Method for date format
 	public void DateFormatTimesheet() throws Exception{
 		findElement(By.linkText("My Timesheet")).click();
 		findElement(By.id("btnAddTimesheet")).click();

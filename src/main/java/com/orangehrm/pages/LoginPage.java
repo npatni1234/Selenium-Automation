@@ -12,10 +12,15 @@ import com.orangehrm.base.BasePage;
 
 //page class extends base class
 public class LoginPage extends BasePage {
-	 WebDriver driver;
-	 public void LoginPage(WebDriver driver) {
-			this.driver=driver;
+//	 WebDriver driver;
+	public LoginPage(WebDriver driver)
+	{
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+		
 	}
+
+	
 	
 	//locating web elements using @FindBy annotation
 	@FindBy(id="txtUsername")
@@ -35,13 +40,7 @@ public class LoginPage extends BasePage {
 	
 	//using constructor to initialise the web elements initElements method
 	//constructor has same name as class name
-	public LoginPage(WebDriver driver)
-	{
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
-		
-	}
-
+	
 
 public boolean validateLogo()
 {

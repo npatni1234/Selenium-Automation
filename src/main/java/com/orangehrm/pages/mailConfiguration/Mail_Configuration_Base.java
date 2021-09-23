@@ -10,7 +10,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class Mail_Configuration_Base extends BasePage  {
 		
-	 
+	 //function for getting the cell value
 	public static String getCellValue(String xl, String Sheet, int r, int c)
 
 	      {
@@ -38,7 +38,7 @@ public class Mail_Configuration_Base extends BasePage  {
 	                                }
 
 	                }
-
+                    //function to get the row count
 	                public static int getRowCount (String xl, String Sheet)
 
 	                {

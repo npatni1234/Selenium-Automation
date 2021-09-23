@@ -14,6 +14,7 @@ public class RepeatedDateTimesheetPage extends BasePage{
 		this.driver= driver;
 	}
 	
+	//Method for repeated date records
 	public void RepeatDateTimesheet() throws Exception{
 		findElement(By.linkText("My Timesheet")).click();
 		findElement(By.id("btnAddTimesheet")).click();

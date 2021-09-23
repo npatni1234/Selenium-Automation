@@ -1,8 +1,8 @@
 package com.orangehrm.pages.timesheet;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
 import com.orangehrm.base.BasePage;
 
 
@@ -12,11 +12,11 @@ public class AdminTimesheetPage extends BasePage{
 	public AdminTimesheetPage(WebDriver driver) {
 		this.driver=driver;
 	}
+	//Method for Admin approval
 	public void AdminTimesheetverify() throws Exception{
 		findElement(By.linkText("Timesheets")).click();
 		findElement(By.id("employee")).click();
 		findElement(By.id("employee")).sendKeys("siddhi kataria");
-		//findElement(By.xpath("//*[@id=\"viewSubmitted\"]")).click();
 		findElement(By.id("btnView")).click();
 		findElement(By.id("btnApprove")).click();	}
 	

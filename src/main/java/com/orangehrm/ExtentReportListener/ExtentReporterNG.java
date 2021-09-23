@@ -5,7 +5,6 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
-
 import org.testng.IReporter;
 import org.testng.IResultMap;
 import org.testng.ISuite;
@@ -14,13 +13,12 @@ import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.xml.XmlSuite;
 
+import com.orangehrm.base.BasePage;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-
-
-public class ExtentReporterNG implements IReporter {
+public class ExtentReporterNG extends BasePage implements IReporter {
 	private ExtentReports extent;
 
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites,
@@ -45,6 +43,8 @@ public class ExtentReporterNG implements IReporter {
 
 	private void buildTestNodes(IResultMap tests, LogStatus status) {
 		ExtentTest test;
+		
+
 
 		if (tests.size() > 0) {
 			for (ITestResult result : tests.getAllResults()) {
@@ -64,9 +64,11 @@ public class ExtentReporterNG implements IReporter {
 				}
 
 				extent.endTest(test);
+				
 			}
 		}
 	}
+
 
 	private Date getTime(long millis) {
 		Calendar calendar = Calendar.getInstance();

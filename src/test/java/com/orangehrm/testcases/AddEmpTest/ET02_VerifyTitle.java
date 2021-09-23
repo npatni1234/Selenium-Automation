@@ -9,12 +9,16 @@ import com.orangehrm.pages.LoginPage;
 import com.orangehrm.pages.employee.AddEmp;
 
 public class ET02_VerifyTitle extends BasePage {
+	String username = BasePage.getInstance().getUsername();
+	String password = BasePage.getInstance().getPassword();
+	
+	//Test for verifying title
   @Test
   public void VerifyTitle() throws Exception {
 	  LoginPage L1=new LoginPage(driver);
-		L1.login("Admin", "N!dhi@12#");
-		AddEmp addEmpObj=new AddEmp();
-		addEmpObj.AddEmp(driver);
+		L1.login(username,password);
+		AddEmp addEmpObj=new AddEmp(driver);
+		//addEmpObj.AddEmp(driver);
 		addEmpObj.AddEmpElements();
 		Thread.sleep(3000);
 		

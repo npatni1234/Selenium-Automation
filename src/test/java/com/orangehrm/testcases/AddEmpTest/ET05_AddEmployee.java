@@ -8,13 +8,17 @@ import com.orangehrm.pages.LoginPage;
 import com.orangehrm.pages.employee.AddEmp;
 
 public class ET05_AddEmployee extends BasePage {
+	String username = BasePage.getInstance().getUsername();
+	String password = BasePage.getInstance().getPassword();
+	
+	//Test to create new Employee
   @Test
   public void Verify_Add_Emp() throws Exception 
   {
 	    LoginPage L1=new LoginPage(driver);
-		L1.login("Admin", "N!dhi@12#");
-		AddEmp addEmpObj=new AddEmp();
-		addEmpObj.AddEmp(driver);
+		L1.login(username,password);
+		AddEmp addEmpObj=new AddEmp(driver);
+		//addEmpObj.AddEmp();
 		addEmpObj.AddEmpElements();
 		addEmpObj.AddEmpDetails();
 		Thread.sleep(3000);

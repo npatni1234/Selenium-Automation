@@ -3,6 +3,10 @@
   <groupId>orangehrm-selenium-automation</groupId>
   <artifactId>orangehrm-selenium-automation</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <properties>
+   <maven.compiler.source>15</maven.compiler.source>
+   <maven.compiler.target>15</maven.compiler.target>
+ </properties>
   <dependencies>
   	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 	<dependency>
@@ -97,7 +101,9 @@
 			<artifactId>guice</artifactId>
 			<version>3.0</version>
 		</dependency>
+
  </dependencies>
+ 
  
 <build>
 	<plugins>
@@ -107,8 +113,13 @@
     			<artifactId>maven-surefire-plugin</artifactId>
     			<version>3.0.0-M5</version>
     			<configuration>
+    			
     				<suiteXmlFiles>
-    					<suiteXmlFile>C:\Users\Nidhi\Desktop\persistent\orangehrm-selenium-automation\testng.xml </suiteXmlFile>
+    					<suiteXmlFile>C:\Users\Nidhi\Desktop\persistent\orangehrm-selenium-automation\Master.xml </suiteXmlFile>
+    					
+    					
+    					
+    					
     				</suiteXmlFiles>
     			</configuration>
     	</plugin>

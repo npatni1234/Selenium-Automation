@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite4]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.orangehrm.testcases.nationality.NT03_MutliAddNationality">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="NationalityTest" invocation-numbers="0 4 5"/>
+        </methods>
+      </class> <!-- com.orangehrm.testcases.nationality.NT03_MutliAddNationality -->
+      <class name="com.orangehrm.testcases.nationality.NT04_Parallel_execution">
+        <methods>
+          <include name="Login_test"/>
+        </methods>
+      </class> <!-- com.orangehrm.testcases.nationality.NT04_Parallel_execution -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite4] -->

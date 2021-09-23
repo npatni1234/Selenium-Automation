@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite1]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.orangehrm.testcases.AddEmpTest.ET06_EmpImageStatus">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="validateImgFormat"/>
+        </methods>
+      </class> <!-- com.orangehrm.testcases.AddEmpTest.ET06_EmpImageStatus -->
+      <class name="com.orangehrm.testcases.AddEmpTest.ET05_AddEmployee">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="Verify_Add_Emp"/>
+        </methods>
+      </class> <!-- com.orangehrm.testcases.AddEmpTest.ET05_AddEmployee -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

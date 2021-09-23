@@ -12,6 +12,7 @@ public class FutureDateTimesheetPage extends BasePage{
 		this.driver= driver;
 	}
 	
+	//Method for future date avalability
 	public void FutureDateTimesheet() throws Exception{
 		findElement(By.linkText("My Timesheet")).click();
 		findElement(By.id("btnAddTimesheet")).click();

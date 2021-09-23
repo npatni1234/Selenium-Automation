@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="NationalitySuite">
+
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.orangehrm.testcases.nationality.NT01_Add_Nationality"/>
+      <class name="com.orangehrm.testcases.nationality.NT02_Delete_Nationality"/>
+      <class name="com.orangehrm.testcases.nationality.NT04_Parallel_execution"/>
+      <class name="com.orangehrm.testcases.nationality.NT03_MutliAddNationality"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,20 +1,40 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 94.731 s <<< FAILURE! - in TestSuite
-com.orangehrm.testcases.DataDrivenTest.loginTest1[Admin1, N!dhi@12#](2)  Time elapsed: 1.326 s  <<< FAILURE!
-java.lang.AssertionError: Both the url's did not match, so test failed expected [http://localhost/orangehrm/symfony/web/index.php/dashboard] but found [http://localhost/orangehrm/symfony/web/index.php/auth/validateCredentials]
-	at com.orangehrm.testcases.DataDrivenTest.loginTest1(DataDrivenTest.java:21)
+Tests run: 15, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 156.99 s <<< FAILURE! - in TestSuite
+com.orangehrm.testcases.login.LT01_LoginPageTest.loginTest[null, null](1)  Time elapsed: 0.025 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at com.orangehrm.testcases.login.LT01_LoginPageTest.loginTest(LT01_LoginPageTest.java:39)
 
-com.orangehrm.testcases.DataDrivenTest.loginTest1[Admin, N!dhi@12](3)  Time elapsed: 1.935 s  <<< FAILURE!
+com.orangehrm.testcases.login.LT01_LoginPageTest.loginTest[Admin1, N!dhi@12#](3)  Time elapsed: 1.296 s  <<< FAILURE!
 java.lang.AssertionError: Both the url's did not match, so test failed expected [http://localhost/orangehrm/symfony/web/index.php/dashboard] but found [http://localhost/orangehrm/symfony/web/index.php/auth/validateCredentials]
-	at com.orangehrm.testcases.DataDrivenTest.loginTest1(DataDrivenTest.java:21)
+	at com.orangehrm.testcases.login.LT01_LoginPageTest.loginTest(LT01_LoginPageTest.java:44)
 
-com.orangehrm.testcases.DataDrivenTest.loginTest1[Admin12, N!dhi@123](4)  Time elapsed: 1.199 s  <<< FAILURE!
+com.orangehrm.testcases.login.LT01_LoginPageTest.loginTest[Admin, N!dhi@12](4)  Time elapsed: 1.788 s  <<< FAILURE!
 java.lang.AssertionError: Both the url's did not match, so test failed expected [http://localhost/orangehrm/symfony/web/index.php/dashboard] but found [http://localhost/orangehrm/symfony/web/index.php/auth/validateCredentials]
-	at com.orangehrm.testcases.DataDrivenTest.loginTest1(DataDrivenTest.java:21)
+	at com.orangehrm.testcases.login.LT01_LoginPageTest.loginTest(LT01_LoginPageTest.java:44)
 
-com.orangehrm.testcases.DataDrivenTest.loginTest1[Admin, ](5)  Time elapsed: 0.378 s  <<< FAILURE!
+com.orangehrm.testcases.login.LT01_LoginPageTest.loginTest[Admin12, N!dhi@123](5)  Time elapsed: 1.195 s  <<< FAILURE!
+java.lang.AssertionError: Both the url's did not match, so test failed expected [http://localhost/orangehrm/symfony/web/index.php/dashboard] but found [http://localhost/orangehrm/symfony/web/index.php/auth/validateCredentials]
+	at com.orangehrm.testcases.login.LT01_LoginPageTest.loginTest(LT01_LoginPageTest.java:44)
+
+com.orangehrm.testcases.login.LT01_LoginPageTest.loginTest[Admin, ](6)  Time elapsed: 0.386 s  <<< FAILURE!
 java.lang.AssertionError: Both the url's did not match, so test failed expected [http://localhost/orangehrm/symfony/web/index.php/dashboard] but found [http://localhost/orangehrm/symfony/web/index.php/auth/login]
-	at com.orangehrm.testcases.DataDrivenTest.loginTest1(DataDrivenTest.java:21)
+	at com.orangehrm.testcases.login.LT01_LoginPageTest.loginTest(LT01_LoginPageTest.java:44)
+
+com.orangehrm.testcases.login.LT01_LoginPageTest.loginTest[, N!dhi@12#](7)  Time elapsed: 0.403 s  <<< FAILURE!
+java.lang.AssertionError: Both the url's did not match, so test failed expected [http://localhost/orangehrm/symfony/web/index.php/dashboard] but found [http://localhost/orangehrm/symfony/web/index.php/auth/login]
+	at com.orangehrm.testcases.login.LT01_LoginPageTest.loginTest(LT01_LoginPageTest.java:44)
+
+com.orangehrm.testcases.mailConfiguration.MT02_ConfigDetailsValidation.Add_Configurations[patninidhi98@gmail.com](1)  Time elapsed: 7.637 s  <<< FAILURE!
+java.lang.AssertionError: Required is required in given format  expected [true] but found [false]
+	at com.orangehrm.testcases.mailConfiguration.MT02_ConfigDetailsValidation.Add_Configurations(MT02_ConfigDetailsValidation.java:44)
+
+com.orangehrm.testcases.mailConfiguration.MT02_ConfigDetailsValidation.Add_Configurations[patninidhi98@gmail](2)  Time elapsed: 7.423 s  <<< FAILURE!
+java.lang.AssertionError: Required is required in given format  expected [true] but found [false]
+	at com.orangehrm.testcases.mailConfiguration.MT02_ConfigDetailsValidation.Add_Configurations(MT02_ConfigDetailsValidation.java:44)
+
+com.orangehrm.testcases.mailConfiguration.MT02_ConfigDetailsValidation.Add_Configurations[](3)  Time elapsed: 7.461 s  <<< FAILURE!
+java.lang.AssertionError: Required is required in given format  expected [true] but found [false]
+	at com.orangehrm.testcases.mailConfiguration.MT02_ConfigDetailsValidation.Add_Configurations(MT02_ConfigDetailsValidation.java:44)
 

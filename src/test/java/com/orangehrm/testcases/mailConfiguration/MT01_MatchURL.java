@@ -8,16 +8,21 @@ import com.orangehrm.pages.mailConfiguration.Mail_Configuration;
 
 
 public class MT01_MatchURL extends BasePage{
+	//from base page
+	String username = BasePage.getInstance().getUsername();
+	String password = BasePage.getInstance().getPassword();
+	
+	//Match the URL for confirming if we are on right configuration page
   @Test
   public void MatchConfigModuleURL() {
 	  
-	    //HomePage homePage; //reference variable for calling HomePage
-	  
-	    loginPage.login("Admin", "N!dhi@12#");
+	    loginPage.login(username,password);  //from properties file
 	    
+	  //Navigate to configuration Details Tab
 	    Mail_Configuration mail_configuration_start=new Mail_Configuration(driver);
 		mail_configuration_start.clickConfigDetails();
 		
+		//object for calling click on edit button
 		Mail_Configuration mail_configuration_editloop=new Mail_Configuration(driver);
  		mail_configuration_editloop.clickConfigDetails();
  		

@@ -10,13 +10,19 @@ import com.orangehrm.base.BasePage;
 
 public class Add_Nationality extends BasePage{
 	WebDriver driver;
+	
 	public void Nationality(WebDriver driver) {
 		this.driver=driver;
 	}
 	public void AddNationality() throws Exception{
+		
+		//Navigate to Admin page
 		findElement(By.id("menu_admin_viewAdminModule")).click();
+		
+		//Navigate to Nationality page
 		findElement(By.id("menu_admin_nationality")).click();
 		findElement(By.id("btnAdd")).click();
+
 		findElement(By.id("nationality_name")).sendKeys("Indian1");
 		findElement(By.id("btnSave")).click();
 	}

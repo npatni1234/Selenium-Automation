@@ -10,25 +10,26 @@ import com.orangehrm.pages.Logout;
 
 
 public class NT02_Delete_Nationality extends BasePage{
+	String username = BasePage.getInstance().getUsername();
+	String password = BasePage.getInstance().getPassword();
 		
 		@Test
 		public void Delete1_Nationality() throws Exception {
 			driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 			LoginPage L1=new LoginPage(driver);
-			L1.LoginPage(driver);
-			L1.login("Admin", "N!dhi@12#");
 			
-			Delete_nationality nationality=new Delete_nationality();
-			nationality.Delete_nationality(driver);
+			L1.login(username,password);
+			
+			Delete_nationality nationality=new Delete_nationality(driver);
+			
 			nationality.Del_Nationality();
 			
 			
 			Logout H1=new Logout();
 			H1.HomePage(driver);
-			H1.Logout();
+			H1.LogoutBtn();
 		}
 		
-
 	}
 
 
